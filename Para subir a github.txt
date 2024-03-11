@@ -1,0 +1,6 @@
+Escribir en la ruta de acceso de la carpeta cmd
+git status
+git add .
+git status
+git commit -m "(escribir el nombre de la actu)"
+git push origin master
