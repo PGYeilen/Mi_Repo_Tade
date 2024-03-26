@@ -31,31 +31,31 @@ begin
    
        when inicio =>
            if i_L = '1' then 
-           q_bus <= s1;
+           d_bus <= s1;
            else 
-           q_bus <= s0;
+           d_bus <= s0;
            end if;
            when s1 =>
            if i_L = '1' then 
-           q_bus <= s1;
+           d_bus <= s1;
            else 
-           q_bus <= s0;
+           d_bus <= s0;
            end if; 
            when s0 =>
            if i_L = '1' then 
-           q_bus <= sp;
+           d_bus <= sp;
            else 
-           q_bus <= s0;
+           d_bus <= s0;
            end if; 
            when sp =>
            if i_L = '1' then 
-           q_bus <= s1;
+           d_bus <= s1;
            else 
-           q_bus <= s0;
+           d_bus <= s0;
            end if; 
    
        when others =>
-         q_bus<= inicio;
+         d_bus<= inicio;
    end case ;
    begin
        
